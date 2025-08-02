@@ -1,0 +1,26 @@
+*{
+    background-color: black;
+    color: white;
+}
+.tittle{
+    
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+}
+.boton{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        color : white;
+        border: 30cap;
+        border-color: rgb(255, 255, 255);
+        background-color: rgb(23, 27, 29);
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor : pointer;
+        transition: background-color 0.3s;
+    }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Imágenes Aleatorias</title>
+  <iframe width="0" height="0"
+  src="https://www.youtube.com/embed/mGUjVbsYG6E?autoplay=1&loop=1&playlist=mGUjVbsYG6E"
+  frameborder="0"
+  allow="autoplay"
+  sandbox="allow-scripts allow-same-origin"
+></iframe>
+  <style>
+    body {
+      color : rgb(117, 102, 227);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+    }
+    .titulo{
+        left:35%;
+        text-align: center;
+        position: absolute;
+        background-color: rgb(78, 29, 125);
+        z-index: 9999;
+        border-radius: 50em;
+        font-size: 2em;
+    }
+    .imagen {
+      position: absolute;
+      width: 500px;
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
+    .video {
+      position: absolute;
+      width: 500px;
+      opacity: 0;
+      transition: opacity 1s ease;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<section class="titulo">
+    <h1> GRACIAS POR TANTO MI NENITA PRECIOSA</h1>
+</section>
+<script>
+  const imagenes = [
+    'casadenathy.jpg', 'compañialinda.jpg', 'corazondeosita.jpg', 'enlauni.jpg',
+    'enliverpool.jpg', 'galadeportiva.jpg', 'hotelnaranja.jpg', 'in luv.jpg' 
+  ];
+    const imagenes2 = [
+    'lugarseguro.jpg',
+    'nochelinda.jpg', 'nochelinda2.jpg', 'noviosvirtuales.jpg', 'princesita.jpg','tilines.jpg', 'cumpleaños de nath.jpg','amor sincero.jpg'
+  ]
+
+  function mostrarImagenAleatoria() {
+    const img = document.createElement("img");
+    img.src = imagenes[Math.floor(Math.random() * imagenes.length)];
+    img.classList.add("imagen");
+  
+
+    // Tamaño de imagen (ajustable)
+    const imgWidth = 200;
+    const imgHeight = 200;
+
+
+    // Posición aleatoria dentro de la ventana
+    const x = Math.random() * (window.innerWidth - imgWidth);
+    const y = Math.random() * (window.innerHeight - imgHeight);
+
+    img.style.left = x + "px";
+    img.style.top = y + "px";
+
+    
+    document.body.appendChild(img);
+
+    setTimeout(() => {
+      img.style.opacity = 1;
+    }, 100);
+
+    setTimeout(() => {
+      img.style.opacity = 0;
+      setTimeout(() => img.remove(), 1000);
+    }, 2500);
+  }
+
+  setInterval(mostrarImagenAleatoria, 3000);
+
+  mostrarImagenAleatoria();
+
+
+  function imagenaleatorio2(){
+    const img2 = document.createElement("img");
+    img2.src = imagenes2[Math.floor(Math.random() * imagenes2.length)];
+    img2.classList.add("imagen");
+  
+
+    // Tamaño de imagen (ajustable)
+    const imgWidth2 = 200;
+    const imgHeight2 = 200;
+
+
+    // Posición aleatoria dentro de la ventana
+    const x2 = Math.random() * (window.innerWidth - imgWidth2);
+    const y2 = Math.random() * (window.innerHeight - imgHeight2);
+
+    img2.style.left = x2 + "px";
+    img2.style.top = y2 + "px";
+
+    
+    document.body.appendChild(img2);
+
+    setTimeout(() => {
+      img2.style.opacity = 1;
+    }, 100);
+
+    setTimeout(() => {
+      img2.style.opacity = 0;
+      setTimeout(() => img2.remove(), 1000);
+    }, 2500);
+  }
+    setInterval(imagenaleatorio2, 3000);
+
+  imagenaleatorio2();
+  const videos = [
+    'besooooooooooooooo.mp4',
+    'enelatardecer.mp4',
+    'mexynathy.mp4',
+    'gala.mp4',
+    'uni.mp4',
+    'uni2.mp4',
+    'uni3.mp4',
+    'uni4.mp4', 
+    'dndn.mp4'
+    // Agrega más si tienes (hasta 12 como con las imágenes)
+  ];
+
+  function mostrarVideoAleatorio() {
+    const video = document.createElement("video");
+    video.src = videos[Math.floor(Math.random() * videos.length)];
+    video.classList.add("video");
+    video.autoplay = true;
+    video.loop = false;         // O true si quieres que se repita
+    video.muted = true;         // Necesario para autoplay en la mayoría de navegadores
+    video.playsInline = true;   // iPhone
+
+    const vidWidth = 200;
+    const vidHeight = 200;
+
+    const x = Math.random() * (window.innerWidth - vidWidth);
+    const y = Math.random() * (window.innerHeight - vidHeight);
+
+    video.style.left = x + "px";
+    video.style.top = y + "px";
+
+    document.body.appendChild(video);
+
+    // Mostrar video
+    setTimeout(() => video.style.opacity = 1, 100);
+
+    // Ocultar y quitar después de X segundos
+    setTimeout(() => {
+      video.style.opacity = 0;
+      setTimeout(() => video.remove(), 1000);
+    }, 3000); // dura 5s
+  }
+
+  setInterval(mostrarVideoAleatorio, 3500);
+  mostrarVideoAleatorio(); // uno al inicio
+</script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+*{
+    background-color: black;
+}
+.contenedor {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #000000;
+}
+
+.imagen1 {
+  position: absolute;
+  top: 50px;     
+  left: 100px;   
+  width: 100px;
+}
+
+.imagen2 {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 100px;
+}
+.imagen3 {
+  position: absolute;
+  top: 100px;     
+  left: 500px;   
+  width: 100px;
+}
+
+.imagen4 {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width:100px;
+}
+.imagen5 {
+  position: absolute;
+  top: 9px;     
+  left: 321px;   
+  width: 100px;
+}
+
+.imagen6 {
+  position: absolute;
+  top: 478px;
+  left: 300px;
+  width: 100px;
+}
+.imagen7 {
+  position: absolute;
+  top: 292.5px;     
+  left: 499px;   
+  width: 100px;
+}
+
+.imagen8 {
+  position: absolute;
+  top: 399px;
+  left: 20px;
+  width:100px;
+}
+.imagen9 {
+  position: absolute;
+  top: 364px;     
+  left: 200px;   
+  width: 100px;
+}
+
+.imagen10 {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 100px;
+}
+.imagen11 {
+  position: absolute;
+  top: 100px;     
+  left: 500px;   
+  width: 100px;
+}
+
+.imagen12 {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  width:100px;
+}
+.imagen13{
+    position: absolute;
+    top: 400px;
+    left: 670px;
+    width: 100px;
+}
+
